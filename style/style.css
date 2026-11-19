@@ -38,7 +38,6 @@ header>h1{
     position:absolute;
     top:8px;
     right:8px;
-
 }
 
 
@@ -142,12 +141,30 @@ div div img{
     border-radius: 20px;
 text-align: center;
 }
+
 .fromage{
     max-width: 500px;
+    
 }
+
+.fromage:hover{
+    max-width: 500px;
+    animation: moving 2s ease-in-out;
+}
+
+@keyframes moving {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
 .parent{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-
+    margin-top: 5%;
 }
